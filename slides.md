@@ -246,21 +246,6 @@ layout: default
 
 </div>
 
-<!-- <div v-click class="grid grid-cols-3 gap-4 mt-5 text-center">
-  <div class="p-3 bg-neutral-800/60 rounded-lg border border-neutral-700/80">
-    <div class="text-2xl font-extrabold text-cyan-400">10x</div>
-    <div class="text-xs opacity-75 mt-1">Faster Deployment Frequency</div>
-  </div>
-  <div class="p-3 bg-neutral-800/60 rounded-lg border border-neutral-700/80">
-    <div class="text-2xl font-extrabold text-green-400">-85%</div>
-    <div class="text-xs opacity-75 mt-1">Reduction in Change Failure Rate</div>
-  </div>
-  <div class="p-3 bg-neutral-800/60 rounded-lg border border-neutral-700/80">
-    <div class="text-2xl font-extrabold text-purple-400">&lt; 15 min</div>
-    <div class="text-xs opacity-75 mt-1">Mean Time to Recovery (MTTR)</div>
-  </div>
-</div> -->
-
 ---
 layout: default
 ---
@@ -1732,7 +1717,7 @@ layout: two-cols
 
 <div class="h-full flex flex-col justify-center items-center">
   <div class="bg-white p-8 rounded-3xl shadow-[0_0_40px_rgba(255,255,255,0.1)] transform hover:scale-105 transition duration-500">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://github.com/HeriLFIU" alt="QR Code" width="250" height="250" />
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://herilfiu.github.io/CI-CD-McNair-Presentation/" alt="QR Code" width="250" height="250" />
   </div>
   <p class="text-gray-400 mt-6 text-sm tracking-widest uppercase font-bold">Scan for Slides & Code</p>
 </div>
