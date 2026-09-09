@@ -1740,79 +1740,48 @@ layout: default
 ---
 
 # Acknowledgements
-<p class="opacity-75 -mt-4 mb-4">With sincere gratitude to my research mentors, laboratory, and program</p>
 
-<div class="grid grid-cols-3 gap-4 my-4">
-  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-blue-500/50 transition-colors">
-    <div>
-      <div class="p-2 bg-blue-500/20 rounded-md text-blue-400 w-fit mb-3">
-        <div class="i-carbon-network-4 text-2xl inline-block"></div>
-      </div>
-      <h3 class="text-base font-bold text-white mb-2">CIARA</h3>
-      <p class="text-xs font-semibold text-blue-400 mb-1">Center for Internet Augmented Research and Assessment</p>
-      <p class="text-xs opacity-80 leading-relaxed">
-        Florida International University research center providing the high-speed networking testbeds, computing infrastructure, and real-world pipelines for this study.
-      </p>
+<div class="mt-12 space-y-6 max-w-4xl mx-auto">
+
+<div class="grid grid-cols-2 gap-6">
+  <div v-click class="p-6 bg-neutral-800/70 rounded-2xl border border-neutral-700 flex items-center gap-4 hover:border-blue-500 transition-colors shadow-lg">
+    <div class="p-3 bg-blue-500/20 rounded-xl text-blue-400">
+      <div class="i-carbon-network-4 text-3xl inline-block"></div>
     </div>
-    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-blue-300 font-mono">
-      ✓ Infrastructure & Research Testbeds
-    </div>
+    <div class="text-xl font-bold text-white">CIARA</div>
   </div>
 
-  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-purple-500/50 transition-colors">
-    <div>
-      <div class="p-2 bg-purple-500/20 rounded-md text-purple-400 w-fit mb-3">
-        <div class="i-carbon-user-multiple text-2xl inline-block"></div>
-      </div>
-      <h3 class="text-base font-bold text-white mb-2">Research Mentors</h3>
-      <div class="space-y-2.5 text-xs opacity-90">
-        <div class="flex items-start gap-2">
-          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
-          <div>
-            <div class="font-bold text-white">Dr. Vasilka Chergarova</div>
-            <div class="text-[11px] opacity-70">Research Assistant Professor & Scientist</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-2">
-          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
-          <div>
-            <div class="font-bold text-white">Vinicius Arcanjo</div>
-            <div class="text-[11px] opacity-70">Lead Software & Network Engineer</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-2">
-          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
-          <div>
-            <div class="font-bold text-white">Jeronimo Bezerra</div>
-            <div class="text-[11px] opacity-70">Chief Information Officer (CIO)</div>
-          </div>
-        </div>
-      </div>
+  <div v-click class="p-6 bg-neutral-800/70 rounded-2xl border border-neutral-700 flex items-center gap-4 hover:border-amber-500 transition-colors shadow-lg">
+    <div class="p-3 bg-amber-500/20 rounded-xl text-amber-400">
+      <div class="i-carbon-education text-3xl inline-block"></div>
     </div>
-    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-purple-300 font-mono">
-      ✓ Invaluable Guidance & Review
-    </div>
-  </div>
-
-  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-amber-500/50 transition-colors">
-    <div>
-      <div class="p-2 bg-amber-500/20 rounded-md text-amber-400 w-fit mb-3">
-        <div class="i-carbon-education text-2xl inline-block"></div>
-      </div>
-      <h3 class="text-base font-bold text-white mb-2">The McNair Program</h3>
-      <p class="text-xs font-semibold text-amber-400 mb-1">Ronald E. McNair Post-Baccalaureate Achievement Program</p>
-      <p class="text-xs opacity-80 leading-relaxed">
-        FIU Honors College and the McNair Scholars Program for academic mentorship, research fellowship support, and preparation for doctoral scholarship.
-      </p>
-    </div>
-    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-amber-300 font-mono">
-      ✓ Scholar Fellowship & Support
-    </div>
+    <div class="text-xl font-bold text-white">The McNair Program</div>
   </div>
 </div>
 
-<div v-click class="p-3 bg-neutral-900/90 rounded-xl border border-neutral-700 text-center text-xs opacity-90 shadow-md">
-  🙏 <strong>Special Thanks:</strong> Sincere gratitude to CIARA, the McNair Program, and my mentors for their invaluable guidance and support throughout this research.
+<div class="grid grid-cols-3 gap-6">
+  <div v-click class="p-5 bg-neutral-800/70 rounded-2xl border border-neutral-700 flex items-center gap-3 hover:border-purple-500 transition-colors shadow-lg">
+    <div class="p-2.5 bg-purple-500/20 rounded-xl text-purple-400">
+      <div class="i-carbon-user-avatar text-2xl inline-block"></div>
+    </div>
+    <div class="font-semibold text-white text-base">Dr. Vasilka Chergarova</div>
+  </div>
+
+  <div v-click class="p-5 bg-neutral-800/70 rounded-2xl border border-neutral-700 flex items-center gap-3 hover:border-purple-500 transition-colors shadow-lg">
+    <div class="p-2.5 bg-purple-500/20 rounded-xl text-purple-400">
+      <div class="i-carbon-user-avatar text-2xl inline-block"></div>
+    </div>
+    <div class="font-semibold text-white text-base">Vinicius Arcanjo</div>
+  </div>
+
+  <div v-click class="p-5 bg-neutral-800/70 rounded-2xl border border-neutral-700 flex items-center gap-3 hover:border-purple-500 transition-colors shadow-lg">
+    <div class="p-2.5 bg-purple-500/20 rounded-xl text-purple-400">
+      <div class="i-carbon-user-avatar text-2xl inline-block"></div>
+    </div>
+    <div class="font-semibold text-white text-base">Jeronimo Bezerra</div>
+  </div>
+</div>
+
 </div>
 
 ---
