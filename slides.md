@@ -1739,7 +1739,7 @@ transition: slide-up
 layout: default
 ---
 
-# Acknowledgements
+# Many Thanks To
 
 <div class="mt-12 space-y-6 max-w-4xl mx-auto">
 
