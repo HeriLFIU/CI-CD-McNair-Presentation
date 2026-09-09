@@ -34,7 +34,7 @@ layout: two-cols-header
     <div class="p-2 bg-blue-500/20 rounded-md text-blue-400"><div class="i-carbon-network-4 text-xl inline-block"></div></div>
     <div>
       <div class="font-bold text-sm text-white/90">01. What is CI/CD?</div>
-      <div class="text-xs opacity-70">Fundamentals & automation pipelines</div>
+      <div class="text-xs opacity-70">Fundamentals, pipelines & continuous security</div>
     </div>
   </div>
 
@@ -129,6 +129,65 @@ image: https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&
 
 <div class="bg-blue-950/40 border-l-4 border-blue-500 p-6 rounded-r-xl mt-10 shadow-lg backdrop-blur-md text-xl leading-relaxed text-gray-200">
 Your <strong>CI/CD pipeline</strong> is your set of automated workflows in order to continuously integrate code into a project and release it into production.
+</div>
+
+---
+transition: slide-up
+layout: default
+---
+
+# Continuous Security (CS)
+<p class="opacity-75 -mt-4 mb-4">Shifting security left into automated pipelines (DevSecOps)</p>
+
+<div class="grid grid-cols-3 gap-4 my-4">
+  <div v-click class="p-4 bg-neutral-800/60 rounded-lg border border-neutral-700 flex flex-col justify-between hover:border-red-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-red-500/20 rounded-md text-red-400 w-fit mb-3">
+        <div class="i-carbon-security text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">Shift-Left Security</h3>
+      <p class="text-xs opacity-80 leading-relaxed">
+        Rather than waiting for manual audits before release, security validation moves into early developer workflows, catching flaws when they are cheapest to fix.
+      </p>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-red-300 font-mono">
+      ✓ Proactive Threat Prevention
+    </div>
+  </div>
+
+  <div v-click class="p-4 bg-neutral-800/60 rounded-lg border border-neutral-700 flex flex-col justify-between hover:border-purple-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-purple-500/20 rounded-md text-purple-400 w-fit mb-3">
+        <div class="i-carbon-code text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">SAST & Secret Auditing</h3>
+      <p class="text-xs opacity-80 leading-relaxed">
+        Static Application Security Testing scans uncompiled source code, Dockerfiles, and IaC for vulnerability patterns, SQL injection risks, and leaked API credentials.
+      </p>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-purple-300 font-mono">
+      ✓ Static Code & IaC Analysis
+    </div>
+  </div>
+
+  <div v-click class="p-4 bg-neutral-800/60 rounded-lg border border-neutral-700 flex flex-col justify-between hover:border-cyan-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-cyan-500/20 rounded-md text-cyan-400 w-fit mb-3">
+        <div class="i-carbon-flash text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">DAST & Runtime Defense</h3>
+      <p class="text-xs opacity-80 leading-relaxed">
+        Dynamic Application Security Testing exercises running build containers and endpoints against exploit simulations, authorization bypasses, and supply-chain threats.
+      </p>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-cyan-300 font-mono">
+      ✓ Dynamic Exploit Scanning
+    </div>
+  </div>
+</div>
+
+<div v-click class="p-3 bg-neutral-900/90 rounded-xl border border-neutral-700 text-center text-xs opacity-90 shadow-md">
+  🛡️ <strong>CI-CS-CD Paradigm:</strong> Standard CI validates functional logic; Continuous Security verifies structural integrity and prevents supply-chain exploits before production deployment.
 </div>
 
 ---
@@ -669,23 +728,32 @@ graph TD
 layout: image-right
 image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop
 transition: zoom
+zoom: 0.88
 ---
 
 # External Automation
 
-<div class="space-y-4 mt-4 bg-gray-900/60 p-4 rounded-2xl border border-gray-700 backdrop-blur-sm">
+<div class="space-y-3 mt-2 bg-gray-900/60 p-4 rounded-2xl border border-gray-700 backdrop-blur-sm shadow-xl">
 
 <v-click>
 <div>
-  <h3 class="text-xl font-bold text-red-400 mb-2">The Trust Problem</h3>
-  <p class="text-gray-300 text-sm leading-snug">You know how to validate your code locally, but what about externally within your repository? That is the most important part; <strong>someone could disable these automated workflows locally and push bad code to the repo.</strong></p>
+  <h3 class="text-lg font-bold text-red-400 mb-1 flex items-center gap-2">
+    <div class="i-carbon-warning-alt text-lg"></div> The Trust Problem
+  </h3>
+  <p class="text-gray-300 text-xs leading-relaxed">
+    You know how to validate your code locally, but what about externally within your repository? That is the most important part; <strong>someone could disable these automated workflows locally and push bad code to the repo.</strong>
+  </p>
 </div>
 </v-click>
 
 <v-click>
-<div class="mt-4 pt-4 border-t border-gray-700">
-  <h3 class="text-xl font-bold text-blue-400 mb-2">The CI Server Solution</h3>
-  <p class="text-gray-300 text-sm leading-snug">Your repo should validate everything as well. For GitHub, you could use something like <strong>GitHub Actions</strong> to execute your continuous integration pipeline in the same exact way, in a clean environment.</p>
+<div class="mt-3 pt-3 border-t border-gray-700/80">
+  <h3 class="text-lg font-bold text-blue-400 mb-1 flex items-center gap-2">
+    <div class="i-carbon-cloud-service-management text-lg"></div> The CI Server Solution
+  </h3>
+  <p class="text-gray-300 text-xs leading-relaxed">
+    Your repo should validate everything as well. For GitHub, you could use something like <strong>GitHub Actions</strong> to execute your continuous integration pipeline in the same exact way, in a clean environment.
+  </p>
 </div>
 </v-click>
 
@@ -697,46 +765,36 @@ layout: default
 
 # Additional Functionality
 
-<p class="text-lg text-gray-300 mb-8 bg-gray-900/50 p-4 rounded-xl border border-gray-700 inline-block">
+<p class="text-sm text-gray-300 mb-5 bg-gray-900/50 px-4 py-2 rounded-xl border border-gray-700 inline-block">
   You have the basics of your CI pipeline done. There are a few more things that you could add:
 </p>
 
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
 
-<v-click>
-<div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-700 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all flex flex-col items-center text-center">
-  <div class="text-5xl mb-3">📝</div>
-  <div class="text-lg font-semibold text-gray-200">Automating changelog generation</div>
+<div v-click class="w-[31%] bg-gray-900/80 p-4 rounded-2xl border border-gray-700 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all flex flex-col items-center text-center">
+  <div class="text-3xl mb-2">📝</div>
+  <div class="text-sm font-semibold text-gray-200">Automating changelog generation</div>
 </div>
-</v-click>
 
-<v-click>
-<div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-700 hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all flex flex-col items-center text-center">
-  <div class="text-5xl mb-3">📊</div>
-  <div class="text-lg font-semibold text-gray-200">Automating project management & Scrum</div>
+<div v-click class="w-[31%] bg-gray-900/80 p-4 rounded-2xl border border-gray-700 hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all flex flex-col items-center text-center">
+  <div class="text-3xl mb-2">📊</div>
+  <div class="text-sm font-semibold text-gray-200">Automating project management & Scrum</div>
 </div>
-</v-click>
 
-<v-click>
-<div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-700 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all flex flex-col items-center text-center">
-  <div class="text-5xl mb-3">🚀</div>
-  <div class="text-lg font-semibold text-gray-200">Automating releases</div>
+<div v-click class="w-[31%] bg-gray-900/80 p-4 rounded-2xl border border-gray-700 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all flex flex-col items-center text-center">
+  <div class="text-3xl mb-2">🚀</div>
+  <div class="text-sm font-semibold text-gray-200">Automating releases</div>
 </div>
-</v-click>
 
-<v-click>
-<div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-700 hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center text-center">
-  <div class="text-5xl mb-3">📦</div>
-  <div class="text-lg font-semibold text-gray-200">Automating application building</div>
+<div v-click class="w-[31%] bg-gray-900/80 p-4 rounded-2xl border border-gray-700 hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center text-center">
+  <div class="text-3xl mb-2">📦</div>
+  <div class="text-sm font-semibold text-gray-200">Automating application building</div>
 </div>
-</v-click>
 
-<v-click>
-<div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all flex flex-col items-center text-center">
-  <div class="text-5xl mb-3">🌍</div>
-  <div class="text-lg font-semibold text-gray-200">Testing across multiple environments</div>
+<div v-click class="w-[31%] bg-gray-900/80 p-4 rounded-2xl border border-gray-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all flex flex-col items-center text-center">
+  <div class="text-3xl mb-2">🌍</div>
+  <div class="text-sm font-semibold text-gray-200">Testing across multiple environments</div>
 </div>
-</v-click>
 
 </div>
 
@@ -1688,6 +1746,87 @@ layout: center
 </div>
 </v-click>
 
+</div>
+
+---
+transition: slide-up
+layout: default
+---
+
+# Acknowledgements
+<p class="opacity-75 -mt-4 mb-4">With sincere gratitude to my research mentors, laboratory, and program</p>
+
+<div class="grid grid-cols-3 gap-4 my-4">
+  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-blue-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-blue-500/20 rounded-md text-blue-400 w-fit mb-3">
+        <div class="i-carbon-network-4 text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">CIARA</h3>
+      <p class="text-xs font-semibold text-blue-400 mb-1">Center for Internet Augmented Research and Assessment</p>
+      <p class="text-xs opacity-80 leading-relaxed">
+        Florida International University research center providing the high-speed networking testbeds, computing infrastructure, and real-world pipelines for this study.
+      </p>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-blue-300 font-mono">
+      ✓ Infrastructure & Research Testbeds
+    </div>
+  </div>
+
+  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-purple-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-purple-500/20 rounded-md text-purple-400 w-fit mb-3">
+        <div class="i-carbon-user-multiple text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">Research Mentors</h3>
+      <div class="space-y-2.5 text-xs opacity-90">
+        <div class="flex items-start gap-2">
+          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
+          <div>
+            <div class="font-bold text-white">Dr. Vasilka Chergarova</div>
+            <div class="text-[11px] opacity-70">Research Assistant Professor & Scientist</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-2">
+          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
+          <div>
+            <div class="font-bold text-white">Vinicius Arcanjo</div>
+            <div class="text-[11px] opacity-70">Lead Software & Network Engineer</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-2">
+          <div class="i-carbon-user-avatar text-purple-400 mt-0.5 inline-block shrink-0"></div>
+          <div>
+            <div class="font-bold text-white">Jeronimo Bezerra</div>
+            <div class="text-[11px] opacity-70">Chief Information Officer (CIO)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-purple-300 font-mono">
+      ✓ Invaluable Guidance & Review
+    </div>
+  </div>
+
+  <div v-click class="p-4 bg-neutral-800/60 rounded-xl border border-neutral-700 flex flex-col justify-between hover:border-amber-500/50 transition-colors">
+    <div>
+      <div class="p-2 bg-amber-500/20 rounded-md text-amber-400 w-fit mb-3">
+        <div class="i-carbon-education text-2xl inline-block"></div>
+      </div>
+      <h3 class="text-base font-bold text-white mb-2">The McNair Program</h3>
+      <p class="text-xs font-semibold text-amber-400 mb-1">Ronald E. McNair Post-Baccalaureate Achievement Program</p>
+      <p class="text-xs opacity-80 leading-relaxed">
+        FIU Honors College and the McNair Scholars Program for academic mentorship, research fellowship support, and preparation for doctoral scholarship.
+      </p>
+    </div>
+    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-amber-300 font-mono">
+      ✓ Scholar Fellowship & Support
+    </div>
+  </div>
+</div>
+
+<div v-click class="p-3 bg-neutral-900/90 rounded-xl border border-neutral-700 text-center text-xs opacity-90 shadow-md">
+  🙏 <strong>Special Thanks:</strong> Sincere gratitude to CIARA, the McNair Program, and my mentors for their invaluable guidance and support throughout this research.
 </div>
 
 ---
