@@ -137,23 +137,9 @@ layout: default
 ---
 
 # Continuous Security (CS)
-<p class="opacity-75 -mt-4 mb-4">Shifting security left into automated pipelines (DevSecOps)</p>
+<p class="opacity-75 -mt-4 mb-4">Continuous Security (DevSecOps)</p>
 
-<div class="grid grid-cols-3 gap-4 my-4">
-  <div v-click class="p-4 bg-neutral-800/60 rounded-lg border border-neutral-700 flex flex-col justify-between hover:border-red-500/50 transition-colors">
-    <div>
-      <div class="p-2 bg-red-500/20 rounded-md text-red-400 w-fit mb-3">
-        <div class="i-carbon-security text-2xl inline-block"></div>
-      </div>
-      <h3 class="text-base font-bold text-white mb-2">Shift-Left Security</h3>
-      <p class="text-xs opacity-80 leading-relaxed">
-        Rather than waiting for manual audits before release, security validation moves into early developer workflows, catching flaws when they are cheapest to fix.
-      </p>
-    </div>
-    <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-red-300 font-mono">
-      ✓ Proactive Threat Prevention
-    </div>
-  </div>
+<div class="flex justify-between grid-cols-3 gap-4 my-4 ">
 
   <div v-click class="p-4 bg-neutral-800/60 rounded-lg border border-neutral-700 flex flex-col justify-between hover:border-purple-500/50 transition-colors">
     <div>
@@ -177,7 +163,7 @@ layout: default
       </div>
       <h3 class="text-base font-bold text-white mb-2">DAST & Runtime Defense</h3>
       <p class="text-xs opacity-80 leading-relaxed">
-        Dynamic Application Security Testing exercises running build containers and endpoints against exploit simulations, authorization bypasses, and supply-chain threats.
+          Dynamic Application Security Testing checks for security vulnerabilities while your code is running.
       </p>
     </div>
     <div class="mt-4 pt-2 border-t border-neutral-700/60 text-[10px] text-cyan-300 font-mono">
